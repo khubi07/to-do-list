@@ -9,7 +9,7 @@
     
     width: 100%;
     max-width: 540px;
-    background: #fff;
+    background: #d0a4ff;
     border-radius: 10px;
     height: 500px;
     padding: 40px 30px 70px;
@@ -26,3 +26,49 @@
     width: 30px;
     margin-left: 10px; /* so thers space btn text n img*/
 }
+
+.form-inline {
+    display: flex;
+    justify-content: space-around;
+}
+#searchBox{
+    width: 400px;
+    background: rgb(247, 247, 251);
+}
+button {
+    background: rgb(120, 55, 167);
+    outline: none;
+    color: white;
+    border-radius: 10px;
+    width: 70px;
+}
+ul li {
+    list-style: none; /*bullet will not appear */
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(https://cdn3.iconfinder.com/data/icons/arrows-160/96/uncheckedV_circle-1024.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 6px;   
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before {
+    background-image: url(https://tse4.mm.bing.net/th?id=OIP.WQZNCbyMTkrlrBGZp1RbhwHaHa&pid=Api&P=0&h=180);
+}
+
+/* https://www.svgrepo.com/show/431522/check-circle.svg */
